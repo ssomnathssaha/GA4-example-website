@@ -541,6 +541,28 @@
               Boxever.eventCreate(viewEvent, function(data) {
               }, 'json');
             });
+            
+            _boxeverq.push(function(){
+              var identityEvent = {
+                "browser_id" : Boxever.getID(),
+                "channel" : "WEB",
+                "type" : "IDENTITY",
+                "language" : "EN",
+                "currency" : "INR",
+                "page" : "homepage",
+                "pos" : "accentureshowcase.com",
+                "email" : "somnath.saha@gmail.com",
+                "title" : "Mr",
+                "firstname" : "Somnath",
+                "lastname" : "Saha",
+                "gender" : "male",
+                "dob" : "1900-01-01T00:00",
+                "age" : "122",
+                "mobile" : "1234567890"
+              };
+              Boxever.eventCreate(identityEvent, function(data) {
+              }, 'json');
+            });
           </script>
 
 
