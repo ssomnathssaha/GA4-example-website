@@ -578,7 +578,10 @@
 
             Boxever.callFlows(callFlowsContext, function(response) {
               console.log(response.result.variant);
-              //response.result.variant
+              if(response.result.variant == "v1")
+                for(let i=0;i<$('.text-bg h1').length;i++){$('.text-bg h1')[i].style.color = "#dc3545";}
+              else
+                for(let i=0;i<$('.text-bg h1').length;i++){$('.text-bg h1')[i].style.color = "#43960f";}
             }, 'json');
           </script>
 
