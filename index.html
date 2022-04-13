@@ -563,6 +563,22 @@
               Boxever.eventCreate(identityEvent, function(data) {
               }, 'json');
             });
+            
+            var callFlowsContext = {
+              context: {
+                "channel": "WEB",   // update before using. e.g. “WEB”
+                "language": "EN",   // update before using. e.g. “en”
+                "currencyCode": "INR",  // update before using. e.g. “EUR”
+                "pointOfSale": "accentureshowcase.com", // or value from your data layer
+                "browserId": Boxever.getID(),
+                "clientKey": "scuatvAGHM9ke1RfXDVgJmE61D5HobSw",   
+                "friendlyId": "demosom"
+              }
+            };
+
+            Boxever.callFlows(callFlowsContext, function(response) {
+              console.log(response);
+            }, 'json');
           </script>
 
 
