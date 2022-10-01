@@ -16,7 +16,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
   
   <script src="https://assets.adobedtm.com/e72b4113c11a/f9ae5079fbad/launch-bb38d1827014-development.min.js" async></script>
-    
+  
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T2CHLMV');</script>
+<!-- End Google Tag Manager -->
+  
+  <script>
+    var addToCart = [];
+  var name = document.getElementById("lblProdName").innerText;
+  var price = parseInt(document.getElementById("lblProdUnits").innerText);
+  addToCart.push({
+  'event': 'addToCart',
+  'ecommerce': {
+    'currencyCode': 'USD',
+    'add': {                                // 'add' actionFieldObject measures.
+      'products': [{                        //  adding a product to a shopping cart.
+        'name': name,
+        'id': name,
+        'price': 70,
+        'brand': 'NA',
+        'category': 'T-Shirt',
+        'variant': 'NA',
+        'quantity': price
+       }]
+    }
+  }
+});
+  </script>
+  
   <!-- Hotjar Tracking Code for GIT test website -->
   <script>
       (function(h,o,t,j,a,r){
