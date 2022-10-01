@@ -26,10 +26,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   
   <script>
-    var addToCart = [];
+  window.dataLayer = window.dataLayer || [];
   //var name = document.getElementById("lblProdName").innerText;
   //var price = parseInt(document.getElementById("lblProdUnits").innerText);
-  addToCart.push({
+  dataLayer.push({
   'event': 'addToCart',
   'ecommerce': {
     'currencyCode': 'USD',
